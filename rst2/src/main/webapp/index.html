@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="jquery.twbsPagination.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	<table id="filtersTable">
+        <thead>
+        	<tr>
+        		<th colspan="2">
+        			<h3>Filters</h3>
+        		</th>
+        	</tr>
+        </thead>
+       	<tbody>
+	  		<tr>
+	  			<th>
+	  				<label for="brandFilter">Brand</label>
+	  			</th>
+	  			<th>
+	  				<input id="brandFilter">
+	  			</th>
+	  		</tr>
+	  		<tr>	
+	    		<th>
+	    			<label for="modelFilter">Model</label>
+	    		</th>
+	    		<th>
+	  				<input id="modelFilter">
+	  			</th>
+	  		</tr>
+	        <tr>
+	     		<th>
+	        		<label for="maxSpeedFilter">Max Speed</label>
+	        	</th>
+	        	<th>
+	        		<input id="maxSpeedFilter">
+	        	</th>
+	        </tr>
+	        <tr>
+	  			<th>
+	        		<label for="horsePowersFilter">Horse Powers</label>
+	        	</th>
+	        	<th>
+	        		<input id="horsePowersFilter">
+	        	</th>
+	        </tr>
+	        <tr>
+	        	<th>
+	        		<label for="creationYearFilter">Year of creation</label>
+	        	</th>
+	        	<th>
+	        		<input id="creationYearFilter">
+	        	</th>
+	        </tr>
+	        <tr>
+	        	<th>
+	        		<button id="filterButton">Press to filter</button>
+	        	</th>
+	        	<th>
+	        		<button onclick="location.href='addMotorcycle.html'">Add motorcycle</button>
+	        	</th>
+	        </tr>
+		</tbody>
+	</table>
+	<br>
+    <br>
+	<table id="motorcyclesTable">
+		<thead id="motorcyclesTableHead">
+			<tr>
+				<th>Brand</th>
+				<th>Model</th>
+				<th>Horse Powers</th>
+				<th>Max Speed</th>
+				<th>Year of creation</th>
+			</tr>
+		</thead>
+		<tbody id="motorcyclesTableBody">
+		</tbody>
+	</table>
+	<br>
+	<br>
+	<ul id="paginationList" class="pagination">
+    </ul>
+</body>
+</html>
